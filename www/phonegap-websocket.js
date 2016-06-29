@@ -124,7 +124,7 @@ hasWebSocket() || (function() {
       case "close":
         var reason = event.reason;
         var code = event.code;
-        event = this._createSimpleEvent(event.type);
+        event = createSimpleEvent(event.type);
         event.reason = reason;
         event.code = code;
         break;
